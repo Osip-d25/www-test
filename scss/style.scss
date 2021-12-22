@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+        max-width: 600px;
+
+        header {
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fa781e;
+            position: relative;
+
+            h1.title {
+                font-weight: 500;
+                 font-size: 18px;
+                 line-height: 34px;
+                 color: #fff;
+                 position: relative;
+                 padding-left: 75px;
+
+                 &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background: #fff;
+                    width: 50px;
+                    height: 50px;
+                 }
+            }
+
+            .close {
+                width: 1.5em;
+                height: 1.5em;
+                position: absolute;
+                right: 1em;
+                top: 1em;
+                overflow: hidden;
+                text-indent: 1em;
+                font-size: 0.75em;
+                border: none;
+                background: transparent;
+                color: transparent;
+              }
+
+              .close::before,
+              .close::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                top: 0;
+                left: 50%;
+                background: #fff;
+            }
+
+            .close::before {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }
+
+              .close::after {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+              }
+        }
+
+        .container {
+            background: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 35px 70px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+          }
+
+          .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #00b150;
+            text-decoration: none;
+          }
+
+          span {
+            display: block;
+            color: #00b150;
+          }
+    }
+}
